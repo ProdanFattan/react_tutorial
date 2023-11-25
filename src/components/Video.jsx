@@ -1,8 +1,21 @@
+import { useEffect } from 'react';
 import './Video.css'
 
 function Video({title="No title",id,views="0 Views",time="0 second ago",verified,children,deleteVideo,editvideo}){
     console.log("Video Render");
     let channel = "Code Fest"
+
+
+    // useEffect(()=>{
+    //     setInterval(()=>{
+    //         console.log("Video playing", id);
+    //     },3000);
+
+    //     return ()=>{
+    //         clearInterval(id);
+    //     }
+        
+    // },[id])
     return (
     <>
         <div className='container'>
